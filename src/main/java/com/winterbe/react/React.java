@@ -16,10 +16,15 @@ public class React {
         protected NashornScriptEngine initialValue() {
             NashornScriptEngine nashornScriptEngine = (NashornScriptEngine) new ScriptEngineManager().getEngineByName("nashorn");
             try {
+            	System.out.print("Begin React Initializion...");
                 nashornScriptEngine.eval(read("static/nashorn-polyfill.js"));
                 nashornScriptEngine.eval(read("static/vendor/react.js"));
                 nashornScriptEngine.eval(read("static/vendor/showdown.min.js"));
                 nashornScriptEngine.eval(read("static/commentBox.js"));
+                nashornScriptEngine.eval(read("static/vendor/lib/text-field.js"));
+                System.out.println("done.");
+                
+              //  nashornScriptEngine.eval(read("jsx/lib/Button.js"));
             } catch (ScriptException e) {
                 throw new RuntimeException(e);
             }
@@ -42,3 +47,4 @@ public class React {
         return new InputStreamReader(in);
     }
 }
+

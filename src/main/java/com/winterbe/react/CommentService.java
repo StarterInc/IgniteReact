@@ -12,7 +12,8 @@ public class CommentService {
 
     public CommentService() {
         comments.add(new Comment("Peter Parker", "This is a comment."));
-        comments.add(new Comment("John Doe", "This is *another* comment."));
+        comments.add(new Comment("Peter Parker", "This is a comment."));
+        comments.add(new Comment("James Bang", "Swag dank."));
     }
 
     public List<Comment> getComments() {

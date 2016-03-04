@@ -16,7 +16,7 @@ var CommentForm = React.createClass({displayName: "CommentForm",
         return (
             React.createElement("form", {className: "commentForm", onSubmit: this.handleSubmit}, 
                 React.createElement("input", {type: "text", placeholder: "Your name", ref: "author"}), 
-                React.createElement("input", {type: "text", placeholder: "Say something...", ref: "text"}), 
+                React.createElement("input", {type: "text", placeholder: "Some something...", ref: "text"}), 
                 React.createElement("input", {type: "submit", value: "Post"})
             )
         );
