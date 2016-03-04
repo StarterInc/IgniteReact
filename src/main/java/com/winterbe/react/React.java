@@ -19,8 +19,10 @@ public class React {
             	System.out.print("Begin React Initializion...");
                 nashornScriptEngine.eval(read("static/nashorn-polyfill.js"));
                 nashornScriptEngine.eval(read("static/vendor/react.js"));
+                nashornScriptEngine.eval(read("static/vendor/jvm-npm.js"));
                 nashornScriptEngine.eval(read("static/vendor/showdown.min.js"));
                 nashornScriptEngine.eval(read("static/commentBox.js"));
+                
                 nashornScriptEngine.eval(read("static/vendor/lib/text-field.js"));
                 System.out.println("done.");
                 
